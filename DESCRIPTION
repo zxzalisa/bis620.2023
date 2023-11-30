@@ -1,0 +1,36 @@
+Package: bis620.2023
+Type: Package
+Title: Functions and Data for the BIS620 (2023) Class
+Version: 0.1.0
+Author: Xinzhi Zhang
+Maintainer: The package maintainer <jiaxuan.sun@yale.edu>
+Description: Homework 4 including shiny app representing histograms and other 
+    graphs folowing specific manual queries.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports:
+  dplyr,
+  ggplot2,
+  purrr,
+  tidyr,
+  shiny,
+  memoise,
+  rlang,
+  tibble,
+  duckdb,
+  DBI,
+  devtools
+Suggests: 
+    knitr,
+    rmarkdown,
+    lubridate,
+    testthat (>= 3.0.0),
+    vdiffr
+Config/testthat/edition: 3
+Depends: 
+    R (>= 3.5.0)
+VignetteBuilder: knitr
