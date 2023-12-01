@@ -36,8 +36,8 @@ library(bis620.2023)
 launchmyapp()
 ```
 
-<img src="man/figures/shiny-example-1.png" width="100%" />
-<img src="man/figures/shiny-example-2.jpg" width="100%" />
-<img src="man/figures/shiny-example-3.png" width="100%" />
-<img src="man/figures/shiny-example-4.png" width="100%" />
+<img src="man/figures/example1.png" width="100%" />
+<img src="man/figures/example2.png.jpg" width="100%" />
+<img src="man/figures/example3.png.png" width="100%" />
+<img src="man/figures/example4.png.png" width="100%" />
 
