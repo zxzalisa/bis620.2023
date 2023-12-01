@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/zxzalisa/bis620.2023/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/zxzalisa/bis620.2023/actions/workflows/R-CMD-check.yaml)
 [![test-coverage](https://github.com/zxzalisa/bis620.2023/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/zxzalisa/bis620.2023/actions/workflows/test-coverage.yaml)
-[![lint](https://github.com/zxzalisa/bis620.2023/actions/workflows/lint.yaml/badge.svg)](https://github.com/zxzalisa/bis620.2023/actions/workflows/lint.yaml)
+
 <!-- badges: end -->
 
 The bis620.2023 package serves as a unified platform designed for interactive data exploration and analysis. It caters to data analysts, researchers, and students, offering a user-friendly interface for dataset exploration and visualization without the need for extensive coding, thanks to the Shiny App integration. This interactive tool can generate histograms for phases, conditions, and designs, as well as dynamic word clouds based on query words or numbers, all customizable within the page panel.
@@ -26,7 +26,6 @@ The bis620.2023 package serves as a unified platform designed for interactive da
 ## Links 
 
 - [Coverage tests](https://github.com/zxzalisa/bis620.2023/actions/workflows/test-coverage.yaml)
-- [Lint results](https://github.com/zxzalisa/bis620.2023/actions/workflows/lint.yaml)
 
 
 ## Installation
