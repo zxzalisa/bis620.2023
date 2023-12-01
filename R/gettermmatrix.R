@@ -4,7 +4,7 @@
 #' @return Frequency of words with descending order.
 #' @importFrom memoise memoise
 #' @export
-getTermMatrix <- memoise::memoise(function(x) {
+getTermMatrix <- memoise(function(x) {
   x <- as.character(x)
   if (is.character(x)){
     myCorpus <- Corpus(VectorSource(x))

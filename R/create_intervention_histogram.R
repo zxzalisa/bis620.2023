@@ -4,7 +4,9 @@
 #'
 #' @param d the table used to plot
 #' @return a histogram of the interventions
-#' to participants.
+#' @importFrom utils head
+#' @importFrom dplyr left_join select filter group_by summarize
+#' @importFrom tidyr unnest
 #' @importFrom ggplot2 geom_col theme_bw xlab ylab theme element_text
 #' @export
 create_interventions_histogram <- function(d) {

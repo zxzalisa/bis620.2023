@@ -5,17 +5,17 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/XXuan-1/bis620.2023/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/XXuan-1/bis620.2023/actions/workflows/R-CMD-check.yaml)
-[![test-coverage](https://github.com/XXuan-1/bis620.2023/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/XXuan-1/bis620.2023/actions/workflows/test-coverage.yaml)
-[![lint](https://github.com/XXuan-1/bis620.2023/actions/workflows/lint.yaml/badge.svg)](https://github.com/XXuan-1/bis620.2023/actions/workflows/lint.yaml)
+[![R-CMD-check](https://github.com/zxzalisa-1/bis620.2023/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/zxzalisa/bis620.2023/actions/workflows/R-CMD-check.yaml)
+[![test-coverage](https://github.com/zxzalisa-1/bis620.2023/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/zxzalisa-1/bis620.2023/actions/workflows/test-coverage.yaml)
+[![lint](https://github.com/zxzalisa-1/bis620.2023/actions/workflows/lint.yaml/badge.svg)](https://github.com/zxzalisa-1/bis620.2023/actions/workflows/lint.yaml)
 <!-- badges: end -->
 
 The package bis620.2023 is designed to offer an integrated environment for interactive data visualization and analysis. It is aimed at data analysts, researchers, and students who require a user-friendly interface to explore and visualize datasets without the need for extensive coding via Shiny App. This interactive page is able to represent histograms of phase, histograms of conditions, histograms of designs, and a colorful word cloud display according to specific query words or numbers which could be adjusted in the page panel.
 
 ## Links 
 
-- [Coverage tests](https://github.com/XXuan-1/bis620.2023/actions/workflows/test-coverage.yaml)
-- [Lint results](https://github.com/XXuan-1/bis620.2023/actions/workflows/lint.yaml)
+- [Coverage tests](https://github.com/zxzalisa-1/bis620.2023/actions/workflows/test-coverage.yaml)
+- [Lint results](https://github.com/zxzalisa-1/bis620.2023/actions/workflows/lint.yaml)
 
 ## Installation
 
@@ -24,7 +24,7 @@ You can install the development version of bis620.2023 from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("XXuan-1/bis620.2023")
+devtools::install_github("zxzalisa-1/bis620.2023")
 ```
 
 ## Example

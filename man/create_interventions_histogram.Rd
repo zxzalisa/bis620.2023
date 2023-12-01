@@ -11,7 +11,6 @@ create_interventions_histogram(d)
 }
 \value{
 a histogram of the interventions
-to participants.
 }
 \description{
 Create a histogram of interventions
