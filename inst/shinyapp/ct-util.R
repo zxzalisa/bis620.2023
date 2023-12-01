@@ -37,13 +37,15 @@ if (length(dbListTables(con)) == 0) {
 #' @param tbl the database table
 #' @param kwds key words
 #' @param column the column where searching the key words
-#' @param ignore_case whether the case will be ignored when searching for the key word. Default is TRUE
-#' @param match_all whether the selected value shoule match all the key words. Default is FALSE
+#' @param ignore_case whether the case will be ignored
+#' when searching for the key word. Default is TRUE
+#' @param match_all whether the selected value should
+#'  match all the key words. Default is FALSE
 #' @return a tibble with the selected values
 query_kwds <- function(tbl, kwds, column, ignore_case = TRUE, match_all = FALSE) {
   kwds <- paste0("%", kwds, "%") |>
     gsub("'", "''", x = _)
-  if (ignore_case) {
+  if ( ignore_case )  {
     like <- " ilike "
   } else{
     like <- " like "
@@ -63,19 +65,19 @@ query_kwds <- function(tbl, kwds, column, ignore_case = TRUE, match_all = FALSE)
 create_phase_histogram_plot = function(d) {
   d$phase[is.na(d$phase)] = "NA"
 
-  d = d |>
+  d <- d |>
     select(phase) |>
     group_by(phase) |>
     summarize(n = n())
 
   #allphase is the character contains the name of all types of phases
-  allphase<- studies |> select(phase) |> as_tibble() |>unique()
-  allphase<-as.character(allphase$phase)
-  allphase[is.na(allphase)] = "NA"
+  allphase <- studies |> select(phase) |> as_tibble() |>unique()
+  allphase <- as.character(allphase$phase)
+  allphase[is.na(allphase)] <- "NA"
 
   #allphase<-as.character("NA","Phase1")
 
-  dnew<-d
+  dnew <- d
   #we reorder the rows in d, and add n=0 for the phases do not occur in d.
   for(i in 1:length(allphase)){
     if(sum(d$phase == as.character(allphase)[i])>0){
