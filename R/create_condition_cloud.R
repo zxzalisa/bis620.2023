@@ -4,6 +4,8 @@
 #' @param freq Minimum Frequency of Conditions
 #' @param max Maximum Number of Conditions
 #' @return a histogram of the interventions
+#' @importFrom getTermMatrix memoise
+#' @export
 create_condition_cloud <- function(d,freq=10,max=25){
   d$phase[is.na(d$phase)] <- "NA"
   data <- left_join(as.data.frame(d),as.data.frame(conditions),by = "nct_id")
