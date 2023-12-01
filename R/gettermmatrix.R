@@ -2,7 +2,7 @@
 #' @description  Get the frequency of words from the text.
 #' @param x the text.
 #' @return Frequency of words with descending order.
-#' @importFrom memoise
+#' @importFrom memoise memoise
 #' @export
 getTermMatrix <- memoise(function(x) {
   x <- as.character(x)
