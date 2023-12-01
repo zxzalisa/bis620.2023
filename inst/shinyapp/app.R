@@ -10,9 +10,9 @@ library(ggplot2)
 library(tm)
 library(wordcloud)
 library(memoise)
-options(warn=-1)
+options(warn = -1)
 
-#create connection to database using duckdb, and create the tables which are going to be used for plot.
+#create connection to database using duckdb and create table
 con <- dbConnect(
   duckdb(
     file.path("ctrialsgovdb/ctrialsgov.duckdb"),
@@ -23,8 +23,8 @@ con <- dbConnect(
 dbListTables(con)
 studies <- tbl(con, "studies")
 sponsors <- tbl(con, "sponsors")
-conditions <- tbl(con,"conditions")
-interventions <- tbl(con,"interventions")
+conditions <- tbl(con, "conditions")
+interventions <- tbl(con, "interventions")
 
 source("ct-util.R")
 
@@ -38,9 +38,10 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       textInput("brief_title_kw", "Brief title keywords"),
-      numericInput("n_conditions", "Number of Conditions in Histogram", value = 10, min = 1, max = 30),
+      numericInput("n_conditions", "Number of Conditions in Histogram",
+                   value = 10, min = 1, max = 30),
       selectInput("sponsor", "Sponsor Type",
-                  choices <- list("ALL" = "ALL",
+                choices <- list("ALL" = "ALL",
                                  "Federal" = "FED",
                                  "Individual" = "INDIV",
                                  "Industry" = "INDUSTRY",
@@ -102,17 +103,17 @@ server <- function(input, output) {
       create_phase_histogram_plot()
   })
 
-  output$conditionPlot<-renderPlot({
+  output$conditionPlot <- renderPlot({
     get_studies() |>
       create_condition_histogram(input$n_conditions)
   })
 
-  output$cloudPlot<-renderPlot({
+  output$cloudPlot <- renderPlot({
     get_studies() |>
-      create_condition_cloud(input$freq,input$max_words)
+      create_condition_cloud(input$freq, input$max_words)
   })
 
-  output$interventionPlot<-renderPlot({
+  output$interventionPlot <- renderPlot({
     get_studies() |>
       create_interventions_histogram()
   })
