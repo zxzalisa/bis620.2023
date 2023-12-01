@@ -37,7 +37,7 @@ launchmyapp()
 ```
 
 <img src="man/figures/example1.png" width="100%" />
-<img src="man/figures/example2.png." width="100%" />
-<img src="man/figures/example3.png." width="100%" />
-<img src="man/figures/example4.png." width="100%" />
+<img src="man/figures/example2.png" width="100%" />
+<img src="man/figures/example3.png" width="100%" />
+<img src="man/figures/example4.png" width="100%" />
 
