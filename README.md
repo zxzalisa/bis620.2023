@@ -10,7 +10,7 @@
 [![lint](https://github.com/zxzalisa/bis620.2023/actions/workflows/lint.yaml/badge.svg)](https://github.com/zxzalisa/bis620.2023/actions/workflows/lint.yaml)
 <!-- badges: end -->
 
-The bis620.2023 package has been created with the purpose of providing a unified platform for interactive data exploration and analysis. Its target audience includes data analysts, researchers, and students seeking a user-friendly interface for dataset exploration and visualization, all without the necessity for extensive coding through the use of the Shiny App. This interactive page can display histograms for phases, conditions, and designs, as well as a vibrant word cloud representation based on specific query words or numbers, which can be adjusted within the page panel.
+The bis620.2023 package serves as a unified platform designed for interactive data exploration and analysis. It caters to data analysts, researchers, and students, offering a user-friendly interface for dataset exploration and visualization without the need for extensive coding, thanks to the Shiny App integration. This interactive tool can generate histograms for phases, conditions, and designs, as well as dynamic word clouds based on query words or numbers, all customizable within the page panel.
 
 ## Links 
 
