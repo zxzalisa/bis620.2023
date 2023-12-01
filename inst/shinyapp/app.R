@@ -41,7 +41,7 @@ ui <- fluidPage(
       numericInput("n_conditions", "Number of Conditions in Histogram",
                    value = 10, min = 1, max = 30),
       selectInput("sponsor", "Sponsor Type",
-                choices <- list("ALL" = "ALL",
+                  choices <- list("ALL" = "ALL",
                                  "Federal" = "FED",
                                  "Individual" = "INDIV",
                                  "Industry" = "INDUSTRY",
