@@ -75,16 +75,13 @@ create_phase_histogram_plot <- function(d) {
   allphase <- studies |> select(phase) |> as_tibble() |> unique()
   allphase <- as.character(allphase$phase)
   allphase[is.na(allphase)] <- "NA"
-
-  #allphase<-as.character("NA","Phase1")
-
   dnew <- d
   #we reorder the rows in d, and add n=0 for the phases do not occur in d.
-  for(i in 1:length(allphase)){
+  for(i in 1:seq_along(allphase) ){
     if(sum(d$phase == as.character(allphase)[i]) > 0 ){
-      dnew[i,] <- d[d$phase==as.character(allphase)[i] , ]
+      dnew[i, ] <- d[d$phase == as.character(allphase)[i] , ]
     }else{
-      dnew[i,] <- d[as.character(allphase)[i] , 0]
+      dnew[ i, ] <- d[as.character(allphase)[i] , 0]
     }
   }
 
