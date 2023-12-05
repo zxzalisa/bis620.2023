@@ -28,7 +28,7 @@ devtools::install_github("zxzalisa/bis620.2023")
 
 ## Example
 
-Here are several snapshots of the displays under different selections.
+Here are several snapshots of the shiny app which demonstrates the added functions.
 
 ``` r
 library(bis620.2023)
